@@ -1,0 +1,30 @@
+{
+  "name": "m-and-m-backend",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:users": "node src/seed/userSeed.js",
+    "seed:products": "node src/seed/productSeed.js",
+    "seed:rewards": "node src/seed/rewardSeed.js",
+    "seed:all": "npm run seed:products && npm run seed:users && npm run seed:rewards"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Backend for Mug & Moment Coffee Shop",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.0.0",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

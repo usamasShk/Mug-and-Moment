@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #74512D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signin-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: #74512D;
+}
+
+.signin-content {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo .starbucks-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.logo span {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.signin-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signin-header h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    font-weight: 600;
+}
+
+.signin-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #74512D;
+    box-shadow: 0 0 0 2px rgba(116, 81, 45, 0.1);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.forgot-password a {
+    color: #74512D;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.signin-submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: #74512D;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signin-submit-btn:hover {
+    background: #5a3f23;
+}
+
+.signin-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.signin-footer p {
+    color: #333;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.signup-link {
+    color: #74512D;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.signup-link:hover {
+    color: #5a3f23;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.login-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+}
+
+.redirect-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #c3e6cb;
+}
+
+.signin-submit-btn:disabled {
+    background-color: #b69681;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .signin-container {
+        padding: 1rem;
+    }
+    
+    .form-section {
+        padding: 1.5rem;
+    }
+} 
